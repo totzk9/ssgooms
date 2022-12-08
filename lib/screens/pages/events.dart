@@ -292,7 +292,7 @@ class CustomDateField extends StatelessWidget {
     final DateTime? picked = await showDatePicker(
       context: context,
       initialDate: DateTime.now(),
-      firstDate: DateTime.now(),
+      firstDate: DateTime.now().subtract(const Duration(days: 99999)),
       lastDate: DateTime.now().add(const Duration(days: 9999)),
       initialEntryMode: DatePickerEntryMode.calendarOnly,
     );

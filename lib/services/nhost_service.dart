@@ -18,7 +18,9 @@ class NHostService {
       backendUrl: backendUrl,
       authStore: SharedPreferencesAuthStore(),
     );
-    _graphqlClient = createNhostGraphQLClient(_client, gqlCache: null);
+    _graphqlClient = createNhostGraphQLClient(_client);
+
+
   }
 
   static NHostService? _instance;

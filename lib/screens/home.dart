@@ -4,11 +4,11 @@ import 'package:provider/provider.dart';
 
 import '../routes/pages.dart';
 import '../services/nhost_service.dart';
-import '../viewmodels/attendanceviewmodel.dart';
+import '../viewmodels/students_viewmodel.dart';
 import '../viewmodels/electionviewmodel.dart';
 import '../viewmodels/eventsviewmodel.dart';
 import '../viewmodels/homeviewmodel.dart';
-import 'pages/attendance.dart';
+import 'pages/students.dart';
 import 'pages/election.dart';
 import 'pages/events.dart';
 
@@ -38,9 +38,9 @@ class _HomeViewState extends State<HomeView> {
                 create: (BuildContext context) => EventsViewModel(),
                 child: const EventsView(),
               ),
-              ChangeNotifierProvider<AttendanceViewModel>(
-                create: (BuildContext context) => AttendanceViewModel(),
-                child: const AttendanceView(),
+              ChangeNotifierProvider<StudentsViewModel>(
+                create: (BuildContext context) => StudentsViewModel(),
+                child: const StudentsView(),
               ),
               ChangeNotifierProvider<ElectionViewModel>(
                 create: (BuildContext context) => ElectionViewModel(),
@@ -64,7 +64,6 @@ class _MainScaffold extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       body: Row(
         children: <Widget>[
