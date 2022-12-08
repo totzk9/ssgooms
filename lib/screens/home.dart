@@ -106,8 +106,8 @@ class _NavBar extends StatelessWidget {
                 icon: Icon(Icons.event),
               ),
               NavigationRailDestination(
-                label: Text('Attendance'),
-                icon: Icon(Icons.check_box),
+                label: Text('Students'),
+                icon: Icon(Icons.person),
               ),
               NavigationRailDestination(
                 label: Text('Election'),
